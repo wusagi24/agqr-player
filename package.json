@@ -7,17 +7,31 @@
   "devDependencies": {
     "awesome-typescript-loader": "^3.4.1",
     "source-map-loader": "^0.2.3",
+    "tslint": "^5.9.1",
+    "tslint-config-airbnb": "^5.4.2",
+    "tslint-react": "^3.4.0",
     "typescript": "^2.6.2",
-    "webpack": "^3.10.0"
+    "webpack": "^3.10.0",
+    "webpack-dev-server": "^2.11.0"
   },
   "dependencies": {
     "@types/react": "^16.0.34",
     "@types/react-dom": "^16.0.3",
+    "@types/react-redux": "^5.0.14",
+    "@types/redux-actions": "^2.2.3",
+    "immutable": "^4.0.0-rc.9",
     "react": "^16.2.0",
-    "react-dom": "^16.2.0"
+    "react-dom": "^16.2.0",
+    "react-redux": "^5.0.6",
+    "redux": "^3.7.2",
+    "redux-actions": "^2.2.1",
+    "redux-logger": "^3.0.6",
+    "redux-saga": "^0.16.0"
   },
   "scripts": {
+    "start": "webpack-dev-server",
     "build": "webpack",
-    "watch": "webpack -w"
+    "watch": "webpack -w",
+    "lint": "tslint 'src/**/*.ts{,x}'"
   }
 }

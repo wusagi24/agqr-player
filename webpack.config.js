@@ -5,6 +5,7 @@ module.exports = {
   output: {
     //  出力ファイルのディレクトリ名
     path: `${__dirname}/dist`,
+    publicPath: '/',
     // 出力ファイル名
     filename: 'bundle.js'
   },
@@ -32,4 +33,8 @@ module.exports = {
   },
   // ソースマップを有効にする
   devtool: 'source-map',
+
+  devServer: {
+    contentBase: 'dist',
+  },
 };
