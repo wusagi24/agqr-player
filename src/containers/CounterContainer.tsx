@@ -35,9 +35,11 @@ class Counter extends React.Component<CounterProps, {}> {
   }
 }
 
-function mapStateToProps(state): { count: number } {
+function mapStateToProps(state: { [key: string]: any }): { count: number } {
+  const { counter } = state;
+
   return {
-    count: state.counter.getCount(),
+    count: counter.getCount(),
   };
 }
 
