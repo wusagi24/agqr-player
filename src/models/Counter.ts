@@ -1,15 +1,15 @@
 import { Record } from 'immutable';
 
-const MAX_COUNT = 99;
-const MIN_COUNT = 0;
-const INIT_COUNT = 0;
-const STEP_COUNT = 1;
+export const MAX_COUNT = 99;
+export const MIN_COUNT = 0;
+export const INIT_COUNT = 0;
+export const STEP_COUNT = 1;
 
 const CounterRecord = Record({
   count: INIT_COUNT,
 });
 
-class Counter extends CounterRecord {
+export class Counter extends CounterRecord {
   public getCount(): number {
     return this.get('count', INIT_COUNT);
   }

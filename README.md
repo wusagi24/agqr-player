@@ -2,13 +2,15 @@
 
 * TypeScript
 
-* webpack
-* webpack-dev-server
++ webpack
 
 * React
-* react-dom
 * Redux
 * redux-actions, redux-logger, redux-saga
 * Immutable
 
-* tslint
++ webpack-dev-server
++ tslint
+
+* mocha
+* power-assert
