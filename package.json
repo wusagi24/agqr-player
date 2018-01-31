@@ -1,9 +1,8 @@
 {
   "name": "agqr-player",
   "version": "0.0.1",
-  "repository": "git@github.com:wusagi24/agqr-player.git",
   "author": "wusagi24 <lapin.wuusan@gmail.com>",
-  "license": "MIT",
+  "private": true,
   "devDependencies": {
     "@types/mocha": "^2.2.47",
     "@types/power-assert": "^1.4.29",
