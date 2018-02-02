@@ -9,8 +9,10 @@
 * redux-actions, redux-logger, redux-saga
 * Immutable
 
-+ webpack-dev-server
-+ tslint
++ Video.js
 
-* mocha
-* power-assert
+* webpack-dev-server
+* tslint
+
++ mocha
++ power-assert
