@@ -17,6 +17,18 @@ module.exports = {
         use: 'awesome-typescript-loader'
       },
       {
+        test: /\.css$/,
+        loaders: [
+          'style-loader',
+          {
+            loader: 'css-loader',
+            options: {
+              url: false,
+            }
+          }
+        ],
+      },
+      {
         enforce: 'pre',
         test: /\.js$/,
         loader: 'source-map-loader'
