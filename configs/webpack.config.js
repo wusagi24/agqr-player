@@ -1,11 +1,21 @@
+const path = require('path');
 const webpack = require('webpack');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 
+const ENTRY_DIR = 'src';
+const OUTPUT_DIR = 'dist';
+
+const rootPath = path.resolve('');
+const srcPath = path.join(rootPath, ENTRY_DIR);
+const distPath = path.join(rootPath, OUTPUT_DIR);
+
 module.exports = {
-  entry: './src/index.tsx',
+  entry: {
+    bundle: [path.join(srcPath, 'index.tsx')],
+  },
 
   output: {
-    path: `${__dirname}/dist`,
+    path: distPath,
     publicPath: '/',
     filename: 'bundle.js'
   },
@@ -45,7 +55,9 @@ module.exports = {
   devtool: 'source-map',
 
   devServer: {
-    contentBase: 'dist',
+    port: 8080,
+    contentBase: distPath,
+    historyApiFallback: true,
   },
 
   plugins: [
