@@ -1,6 +1,6 @@
 const path = require('path');
 
-const beforeBuild = require('./beforeBuild');
+const beforeBuild = require('./tasks/beforeBuild');
 const webpackDevServer = require('./tasks/webpack_dev_server');
 
 const DIST_DIR = 'dist';

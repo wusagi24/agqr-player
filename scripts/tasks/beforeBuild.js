@@ -1,7 +1,7 @@
 const path = require('path');
 
-const emptyDir = require('./tasks/empty_dir');
-const copyDir = require('./tasks/copy');
+const emptyDir = require('./empty_dir');
+const copyDir = require('./copy');
 
 async function beforeBuild(paths) {
   const { distPath, libsPath, assetPath } = paths;
