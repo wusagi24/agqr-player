@@ -1,4 +1,4 @@
-# agqr-player
+# rtmp-player
 
 * TypeScript
 
